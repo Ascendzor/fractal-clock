@@ -18,25 +18,11 @@ const App = props => {
       const hours = now.getHours() + (minutes / 60)
       const secondAngle = 360 * seconds / 60
       const minuteAngle = 360 * minutes / 60
-      // const secondAngle = 360 * 5 / 60
-      // const minuteAngle = 360 * 0 / 60
-
-      // setAngleShmangles([
-      //   360 * hours / 12,
-      //   360 * minutes / 60,
-      //   360 * seconds / 60,
-      // ])
-
-      // setAngleShmangles([
-      //   0,
-      //   0,
-      //   360 * 5 / 60,
-      // ])
-
+      
       const lineLength = 75
       const lineStyle = {strokeWidth: 1, stroke: 'grey'}
       const fractate = (minuteAngle, secondAngle, iteration) => {
-        if(iteration == 10) return
+        if(iteration == 9) return
         return <g>
           <g transform={`rotate(${minuteAngle})`}>
             <path style={lineStyle} d={`M 0,0 L 0,${-lineLength/iteration} Z`} />
@@ -57,17 +43,14 @@ const App = props => {
       // console.log(lines)
       setLines(lines)
       // <path transform={`rotate(${angleShmangles[1]})`} style={{stroke: 'grey', strokeWidth: 2}} d='M 0,0 L 0,-75 Z' />
-    }, 32)
+    }, 16)
   }, [])
   
   
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
       <div style={{marginLeft: 'auto', marginRight: 'auto', height: '100%', width: '100%', position: 'absolute'}}>
-        <svg width='600' height='600' viewBox="0 0 600 600" style={{paddingTop: 50}}>
+        <svg width='600' height='600' viewBox="0 0 600 600">
           <g transform='translate(300, 300)'>
             {/* <path style={{stroke: 'red', strokeWidth: 3}} d='M 0,-100 L 0,-120 Z' /> */}
             {[...Array(12)].map((nothing, i) => {
