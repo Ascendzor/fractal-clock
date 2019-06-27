@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/fractal-clock/static/css/main.85ca8357.chunk.css",
-    "main.js": "/fractal-clock/static/js/main.dcdc030c.chunk.js",
-    "main.js.map": "/fractal-clock/static/js/main.dcdc030c.chunk.js.map",
+    "main.js": "/fractal-clock/static/js/main.eceaaec5.chunk.js",
+    "main.js.map": "/fractal-clock/static/js/main.eceaaec5.chunk.js.map",
     "runtime~main.js": "/fractal-clock/static/js/runtime~main.9653d80a.js",
     "runtime~main.js.map": "/fractal-clock/static/js/runtime~main.9653d80a.js.map",
     "static/js/2.5006ec93.chunk.js": "/fractal-clock/static/js/2.5006ec93.chunk.js",
     "static/js/2.5006ec93.chunk.js.map": "/fractal-clock/static/js/2.5006ec93.chunk.js.map",
     "index.html": "/fractal-clock/index.html",
-    "precache-manifest.98ba1e6458a08cff6a283c1cf3780aed.js": "/fractal-clock/precache-manifest.98ba1e6458a08cff6a283c1cf3780aed.js",
+    "precache-manifest.5f111b73e1b85ecea8f8e129a4861b21.js": "/fractal-clock/precache-manifest.5f111b73e1b85ecea8f8e129a4861b21.js",
     "service-worker.js": "/fractal-clock/service-worker.js",
     "static/css/main.85ca8357.chunk.css.map": "/fractal-clock/static/css/main.85ca8357.chunk.css.map"
   }
