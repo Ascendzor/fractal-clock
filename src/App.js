@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
 import { original } from 'immer';
-
+const scale = 1
 const App = props => {
 
   const [timeyWimeys, setTimeyWimeys] = useState([0, 0, 0]) //[hours, minutes, seconds]
@@ -20,7 +20,7 @@ const App = props => {
       const secondAngle = 360 * seconds / 60
       const minuteAngle = 360 * minutes / 60
 
-      const lineLength = 75
+      const lineLength = 75 * scale * 1.2
       const lineStyle = {strokeWidth: .2, stroke: '#E9E9EC'}
       const fractate = (minuteAngle, secondAngle, iteration, length) => {
         if(iteration == 10) return
@@ -40,7 +40,7 @@ const App = props => {
         </g>
       }
 
-      const lines = fractate(minuteAngle, secondAngle, 1, 75)
+      const lines = fractate(minuteAngle, secondAngle, 1, lineLength)
       // console.log(lines)
       setLines(lines)
 
